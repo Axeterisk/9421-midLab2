@@ -10,9 +10,13 @@ public class Utility {
         StringBuilder variable
      */
     public StringBuilder acceptInput() {
-        return null;
-    }
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter text");
 
+        StringBuilder string  = new StringBuilder(scan.nextLine());
+        string.append(scan.nextLine());
+        return string;
+    }
     /* TODO: 10/30/2021 @CJ
        Determines the frequency of each character
        and sets the appropriate value for
