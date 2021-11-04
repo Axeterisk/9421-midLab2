@@ -13,9 +13,10 @@ public class Utility {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter text");
 
-        StringBuilder string  = new StringBuilder(scan.nextLine());
-        string.append(scan.nextLine());
-        return string;
+        StringBuilder str  = new StringBuilder(scan.nextLine());
+        str.append(scan.nextLine());
+        int length = str.length();
+        return str;
     }
     /* TODO: 10/30/2021 @CJ
        Determines the frequency of each character
